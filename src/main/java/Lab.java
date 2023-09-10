@@ -1,7 +1,7 @@
 public class Lab {
     /**
      * A path parameter, in a URL, is a variable part of the URL that may be extracted. Typically, they identify
-     * a particular piece of data that the backend ought to retrieve. For isntance, this sample will deal with an
+     * a particular piece of data that the backend ought to retrieve. For instance, this sample will deal with an
      * imaginary user profile feature on https://revature.com, where sending a GET request to
      * https://revature.com/user/1234 will display the information of user number 1234. The web API frameworks we'll
      * be using in the future will be able to do this for us automatically. For now, we will be using basic string

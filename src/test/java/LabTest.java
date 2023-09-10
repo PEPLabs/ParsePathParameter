@@ -8,6 +8,10 @@ public class LabTest {
     public void setUp(){
         lab = new Lab();
     }
+
+    /**
+     * the path param in the url https://revature.com/user/1234 will be 1234
+     */
     @Test
     public void paramTest1(){
         String url = "https://revature.com/user/1234";
@@ -15,6 +19,9 @@ public class LabTest {
         int actual = lab.parse(url);
         Assert.assertEquals(expected, actual);
     }
+    /**
+     * the path param in the url https://revature.com/user/9999999 will be 9999999
+     */
     @Test
     public void paramTest2(){
         String url = "https://revature.com/user/9999999";
@@ -22,6 +29,9 @@ public class LabTest {
         int actual = lab.parse(url);
         Assert.assertEquals(expected, actual);
     }
+    /**
+     * the path param in the url https://revature.com/user/1 will be 1
+     */
     @Test
     public void paramTest3(){
         String url = "https://revature.com/user/1";
